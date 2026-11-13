@@ -253,7 +253,7 @@ p { margin: 0 0 1em; }
   position: relative; overflow: hidden;
 }
 .soon::after {
-  content: ""; position: absolute; width: 220px; height: 220px; border-radius: 50%; right: -60px; bottom: -80px;
+  content: ""; position: absolute; width: 150px; height: 150px; border-radius: 50%; right: -45px; bottom: -55px;
   background: radial-gradient(circle at 35% 30%, #F2B946, #C27D14 70%); opacity: .9;
 }
 .soon__badge {
@@ -261,7 +261,8 @@ p { margin: 0 0 1em; }
   background: var(--saffron); color: var(--night); padding: 5px 10px; border-radius: 999px; margin-bottom: 18px;
 }
 .soon h3 { font-size: 30px; max-width: 12em; position: relative; z-index: 1; }
-.soon p { color: #CDBBA5; margin: 0; max-width: 24em; position: relative; z-index: 1; }
+.soon { padding-bottom: 72px; }
+.contact__inner > .soon p { color: #DCCBB5; font-size: 16px; margin: 0; max-width: 19em; position: relative; z-index: 1; }
 
 /* Footer */
 .footer { background: var(--night); color: #CDBBA5; padding: 48px 0; }
