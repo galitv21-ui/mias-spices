@@ -26,13 +26,14 @@ chips.forEach(chip => chip.addEventListener('click', () => {
   chip.setAttribute('aria-selected', 'true');
   const f = chip.dataset.filter;
   cards.forEach(card => {
+    if (!card.dataset.tags) return; // the "Try a few" card always stays visible
     const tags = card.dataset.tags.split(' ');
     card.classList.toggle('is-hidden', f !== 'all' && !tags.includes(f));
   });
 }));
 
 // Fade sections in as they scroll into view
-const revealTargets = document.querySelectorAll('.section__head, .card, .blend, .gift, .promise, .recipe, .story__art, .story__copy, .contact__inner > *');
+const revealTargets = document.querySelectorAll('.section__head, .card, .promise, .recipe, .story__art, .story__copy, .contact__inner > *');
 if ('IntersectionObserver' in window) {
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {

@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mia's Spices — Small-batch spices &amp; blends</title>
-  <meta name="description" content="Mia's Spices: freshly ground, small-batch spices and hand-mixed blends. Za'atar, sumac, baharat, hawaij and more.">
+  <title>Mia's Spices — Handmade Mediterranean spice blends</title>
+  <meta name="description" content="Mia's Spices: handmade, small-batch Mediterranean spice blends. Shawarma, Mediterranean BBQ, Red Gold, Dukkah and Italian Seasoning.">
   <meta property="og:title" content="Mia's Spices">
-  <meta property="og:description" content="Freshly ground, small-batch spices and hand-mixed blends.">
+  <meta property="og:description" content="Handmade, small-batch Mediterranean spice blends.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mias-spices.online/">
+  <meta property="og:image" content="https://mias-spices.online/images/logo.jpg">
   <meta name="theme-color" content="#F5EDE1">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,26 +19,20 @@
 </head>
 <body>
 
-  <!-- Grain texture used across the site -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
-  </svg>
-
   <header class="nav" id="top">
     <div class="wrap nav__inner">
       <a href="#top" class="logo" aria-label="Mia's Spices home">
-        <span class="logo__mark" aria-hidden="true"></span>
+        <img class="logo__img" src="images/logo.jpg" alt="" width="40" height="40">
         <span class="logo__text">Mia's <em>Spices</em></span>
       </a>
       <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
         <span></span><span></span>
       </button>
       <nav id="menu" class="nav__menu">
-        <a href="#spices">Spices</a>
         <a href="#blends">Blends</a>
         <a href="#story">Our story</a>
         <a href="#kitchen">In the kitchen</a>
-        <a href="#contact" class="btn btn--small">Order</a>
+        <a href="#shop" class="btn btn--small">Shop</a>
       </nav>
     </div>
   </header>
@@ -47,26 +42,24 @@
     <section class="hero">
       <div class="wrap hero__inner">
         <div class="hero__copy">
-          <p class="eyebrow">Small batch · Ground to order</p>
-          <h1>Spices that taste like <em>somewhere.</em></h1>
-          <p class="lede">Whole spices sourced from growers we know, toasted and ground in small batches, and blended by hand in Mia's kitchen. Fresh enough to smell the moment you open the jar.</p>
+          <p class="eyebrow">Handmade · Small batch</p>
+          <h1>Mediterranean flavour, <em>blended by hand.</em></h1>
+          <p class="lede">Spice blends crafted with love and inspired by the flavours Mia grew up with. Spices sourced from around the world, mixed in small batches, made for delicious home cooking.</p>
           <div class="hero__cta">
-            <a href="#spices" class="btn">Explore the spices</a>
-            <a href="#story" class="link-arrow">Meet Mia</a>
+            <a href="#blends" class="btn">See the blends</a>
+            <a href="#shop" class="link-arrow">Shop on Whatnot</a>
           </div>
         </div>
-        <div class="hero__art" aria-hidden="true">
-          <div class="pile pile--saffron"></div>
-          <div class="pile pile--paprika"></div>
-          <div class="pile pile--zaatar"></div>
-          <div class="pile pile--sumac"></div>
-          <div class="pile pile--turmeric"></div>
-          <span class="hero__stamp">Hand<br>blended<br><b>since day one</b></span>
+        <div class="hero__art">
+          <div class="hero__logo"><img src="images/logo.jpg" alt="Mia's Spices logo: hand-lettered name over a burst of turmeric with basil and red chilies" width="640" height="551"></div>
+          <img class="hero__pouch hero__pouch--1" src="images/shawarma.jpg" alt="" width="900" height="1174" loading="eager">
+          <img class="hero__pouch hero__pouch--2" src="images/red-gold.jpg" alt="" width="900" height="1126" loading="eager">
+          <span class="hero__stamp">Hand<br>blended<br><b>small batch</b></span>
         </div>
       </div>
-      <div class="marquee" aria-label="Spices we carry">
+      <div class="marquee" aria-label="Our blends">
         <ul class="marquee__track">
-          <li>Za'atar</li><li>Sumac</li><li>Smoked paprika</li><li>Baharat</li><li>Hawaij</li><li>Turmeric</li><li>Cumin</li><li>Ras el hanout</li><li>Cardamom</li><li>Aleppo pepper</li>
+          <li>Shawarma</li><li>Mediterranean BBQ</li><li>Red Gold</li><li>Dukkah</li><li>Italian Seasoning</li><li>Handmade with love</li>
         </ul>
       </div>
     </section>
@@ -75,170 +68,116 @@
     <section class="promises wrap" aria-label="What makes us different">
       <div class="promise">
         <span class="promise__num">01</span>
-        <h3>Fresh, not dusty</h3>
-        <p>We grind in small runs every week. No jars sitting in a warehouse for a year.</p>
+        <h3>Small batch &amp; handcrafted</h3>
+        <p>Every blend is mixed by hand in small batches, so each pouch is fresh and full of flavour.</p>
       </div>
       <div class="promise">
         <span class="promise__num">02</span>
-        <h3>Nothing added</h3>
-        <p>No fillers, no anti-caking agents, no extra salt. Just the spice.</p>
+        <h3>Spices from around the world</h3>
+        <p>Good food starts with great spices. We source ours from around the world.</p>
       </div>
       <div class="promise">
         <span class="promise__num">03</span>
-        <h3>Blended by hand</h3>
-        <p>Every blend is mixed, tasted and adjusted by Mia before it's packed.</p>
-      </div>
-    </section>
-
-    <!-- SPICES -->
-    <section class="section" id="spices">
-      <div class="wrap">
-        <div class="section__head">
-          <p class="eyebrow">The pantry</p>
-          <h2>Single spices</h2>
-          <p>The building blocks. Each one picked for colour, aroma and oil content, then ground fresh.</p>
-        </div>
-
-        <div class="filters" role="tablist" aria-label="Filter spices by flavour">
-          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="chip" data-filter="warm" role="tab" aria-selected="false">Warm</button>
-          <button class="chip" data-filter="bright" role="tab" aria-selected="false">Bright</button>
-          <button class="chip" data-filter="smoky" role="tab" aria-selected="false">Smoky &amp; hot</button>
-        </div>
-
-        <div class="grid" id="spice-grid">
-          <article class="card" data-tags="bright">
-            <div class="card__swatch" style="--c1:#8E2C3B;--c2:#5E1A27"></div>
-            <div class="card__body">
-              <h3>Sumac</h3>
-              <p class="card__notes">Tart · lemony · fruity</p>
-              <p>Crushed dried berries with a sour, citrus snap. Scatter over salads, eggs, grilled fish and roast onions.</p>
-              <div class="card__foot"><span>60 g jar</span><a href="#contact" class="card__add">Order</a></div>
-            </div>
-          </article>
-
-          <article class="card" data-tags="smoky">
-            <div class="card__swatch" style="--c1:#C0432A;--c2:#7D2516"></div>
-            <div class="card__body">
-              <h3>Smoked paprika</h3>
-              <p class="card__notes">Smoky · sweet · deep</p>
-              <p>Peppers dried slowly over wood smoke. Gives stews, beans and roast potatoes a campfire depth.</p>
-              <div class="card__foot"><span>70 g jar</span><a href="#contact" class="card__add">Order</a></div>
-            </div>
-          </article>
-
-          <article class="card" data-tags="warm">
-            <div class="card__swatch" style="--c1:#E2A12A;--c2:#B86E12"></div>
-            <div class="card__body">
-              <h3>Turmeric</h3>
-              <p class="card__notes">Earthy · gingery · golden</p>
-              <p>High-curcumin root with real colour. For rice, soups, lentils and a golden milk before bed.</p>
-              <div class="card__foot"><span>80 g jar</span><a href="#contact" class="card__add">Order</a></div>
-            </div>
-          </article>
-
-          <article class="card" data-tags="warm">
-            <div class="card__swatch" style="--c1:#9A6A3A;--c2:#5E3B1C"></div>
-            <div class="card__body">
-              <h3>Cumin</h3>
-              <p class="card__notes">Nutty · savoury · warm</p>
-              <p>Toasted before grinding to wake up the oils. The backbone of hummus, shakshuka and chili.</p>
-              <div class="card__foot"><span>60 g jar</span><a href="#contact" class="card__add">Order</a></div>
-            </div>
-          </article>
-
-          <article class="card" data-tags="warm bright">
-            <div class="card__swatch" style="--c1:#8DA05A;--c2:#5A6B32"></div>
-            <div class="card__body">
-              <h3>Green cardamom</h3>
-              <p class="card__notes">Floral · minty · sweet</p>
-              <p>Freshly cracked pods. Lovely in coffee, rice puddings, cakes and slow-cooked meat.</p>
-              <div class="card__foot"><span>40 g jar</span><a href="#contact" class="card__add">Order</a></div>
-            </div>
-          </article>
-
-          <article class="card" data-tags="smoky">
-            <div class="card__swatch" style="--c1:#A3301F;--c2:#5B1A10"></div>
-            <div class="card__body">
-              <h3>Aleppo-style pepper</h3>
-              <p class="card__notes">Fruity · oily · gentle heat</p>
-              <p>Coarse, glossy flakes with a slow warmth. Finish hummus, pizza, eggs and buttered pasta.</p>
-              <div class="card__foot"><span>60 g jar</span><a href="#contact" class="card__add">Order</a></div>
-            </div>
-          </article>
-        </div>
+        <h3>Made for home cooking</h3>
+        <p>Simple, honest ingredients, all listed on the label. One spoon and dinner is seasoned.</p>
       </div>
     </section>
 
     <!-- BLENDS -->
-    <section class="section section--dark" id="blends">
+    <section class="section" id="blends">
       <div class="wrap">
-        <div class="section__head section__head--light">
-          <p class="eyebrow">Mia's blends</p>
-          <h2>Mixed by hand, tasted by Mia</h2>
-          <p>Our house recipes. Each one is balanced so you can use a single spoon and get a complete flavour.</p>
+        <div class="section__head">
+          <p class="eyebrow">The blends</p>
+          <h2>Five blends, all handmade</h2>
+          <p>Each one comes in a 56 g (2 oz) resealable pouch with a window, so you can see what's inside.</p>
         </div>
 
-        <div class="blends">
-          <article class="blend">
-            <div class="blend__jar" style="--c1:#7C8A3E;--c2:#C9A85A"><span>Z</span></div>
-            <div>
-              <h3>Za'atar</h3>
-              <p class="blend__mix">Wild thyme · toasted sesame · sumac · sea salt</p>
-              <p>Herby, nutty and bright. Mix with olive oil for warm bread, or sprinkle over labneh and roast vegetables.</p>
-            </div>
-          </article>
-          <article class="blend">
-            <div class="blend__jar" style="--c1:#7A3B22;--c2:#C77B3B"><span>B</span></div>
-            <div>
-              <h3>Baharat</h3>
-              <p class="blend__mix">Allspice · black pepper · cinnamon · clove · nutmeg</p>
-              <p>A warm, rounded all-rounder for meatballs, rice dishes, roast chicken and tomato sauces.</p>
-            </div>
-          </article>
-          <article class="blend">
-            <div class="blend__jar" style="--c1:#B5852E;--c2:#E3C27A"><span>H</span></div>
-            <div>
-              <h3>Hawaij for coffee</h3>
-              <p class="blend__mix">Cardamom · ginger · cinnamon · clove</p>
-              <p>Half a teaspoon in the pot turns everyday coffee into something special. Also wonderful in cakes.</p>
-            </div>
-          </article>
-          <article class="blend">
-            <div class="blend__jar" style="--c1:#A8452A;--c2:#E2A12A"><span>R</span></div>
-            <div>
-              <h3>Ras el hanout</h3>
-              <p class="blend__mix">Up to 14 spices · rose petals · warm &amp; floral</p>
-              <p>Our most complex blend. Made for tagines, roast squash, couscous and lamb.</p>
-            </div>
-          </article>
+        <div class="filters" role="tablist" aria-label="Filter blends">
+          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="chip" data-filter="grill" role="tab" aria-selected="false">Grill &amp; roast</button>
+          <button class="chip" data-filter="herb" role="tab" aria-selected="false">Herbs</button>
+          <button class="chip" data-filter="topping" role="tab" aria-selected="false">Toppings</button>
         </div>
 
-        <div class="gift">
-          <div>
-            <h3>The tasting box</h3>
-            <p>Four blends and two single spices in a gift box, with Mia's recipe cards. Made for first-timers and for gifts.</p>
-          </div>
-          <a href="#contact" class="btn btn--light">Ask about the box</a>
+        <div class="grid" id="spice-grid">
+          <article class="card" data-tags="grill">
+            <div class="card__photo"><img src="images/shawarma.jpg" alt="Shawarma Spice Blend pouch from Mia's Spices" width="900" height="1174" loading="lazy"></div>
+            <div class="card__body">
+              <h3>Shawarma Spice Blend</h3>
+              <p class="card__notes">Warm · earthy · golden</p>
+              <p>The warm flavours of real Mediterranean shawarma. Rub it on chicken, lamb or cauliflower before roasting.</p>
+              <p class="card__ing"><b>Ingredients:</b> cumin, turmeric, coriander, paprika, black pepper, salt</p>
+              <div class="card__foot"><span>56 g · <b>$6</b></span><a href="#shop" class="card__add">Buy</a></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="grill">
+            <div class="card__photo"><img src="images/mediterranean-bbq.jpg" alt="Mediterranean BBQ Spice Blend pouch from Mia's Spices" width="900" height="1148" loading="lazy"></div>
+            <div class="card__body">
+              <h3>Mediterranean BBQ</h3>
+              <p class="card__notes">Smoky · sweet · a little heat</p>
+              <p>Our yummy BBQ rub. Smoked paprika and a touch of brown sugar for ribs, wings, burgers and grilled veg.</p>
+              <p class="card__ing"><b>Ingredients:</b> black pepper, paprika, smoked paprika, garlic powder, onion powder, coriander, brown sugar, cayenne pepper, salt</p>
+              <div class="card__foot"><span>56 g · <b>$6</b></span><a href="#shop" class="card__add">Buy</a></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="grill">
+            <div class="card__photo"><img src="images/red-gold.jpg" alt="Red Gold Blend pouch from Mia's Spices, marked mild" width="900" height="1126" loading="lazy"></div>
+            <div class="card__body">
+              <h3>Red Gold Blend <span class="tag">Mild</span></h3>
+              <p class="card__notes">Mild · rich · super flavourful</p>
+              <p>A mild, everyday all-rounder. Great on roast potatoes, eggs, chicken, fish and stews.</p>
+              <p class="card__ing"><b>Ingredients:</b> paprika, cumin, spicy paprika, oregano, garlic powder, salt</p>
+              <div class="card__foot"><span>56 g · <b>$6</b></span><a href="#shop" class="card__add">Buy</a></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="topping">
+            <div class="card__photo"><img src="images/dukkah.jpg" alt="Dukkah pouch from Mia's Spices, labelled contains nuts" width="900" height="1118" loading="lazy"></div>
+            <div class="card__body">
+              <h3>Dukkah <span class="tag tag--warn">Contains nuts</span></h3>
+              <p class="card__notes">Nutty · crunchy · aromatic</p>
+              <p>A nutty, aromatic topping blend. Goes great on avocado toast, salads, or with bread and olive oil for dipping.</p>
+              <p class="card__ing"><b>Ingredients:</b> peanuts, cashews, coriander seeds, cumin seeds, sesame seeds, salt</p>
+              <div class="card__foot"><span>56 g · <b>$6</b></span><a href="#shop" class="card__add">Buy</a></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="herb">
+            <div class="card__photo"><img src="images/italian-seasoning.jpg" alt="Italian Seasoning pouch from Mia's Spices" width="900" height="1182" loading="lazy"></div>
+            <div class="card__body">
+              <h3>Italian Seasoning</h3>
+              <p class="card__notes">Herby · fragrant · a hint of chili</p>
+              <p>All the good herbs mixed together. For pasta sauce, pizza, garlic bread, roast veg and dressings.</p>
+              <p class="card__ing"><b>Ingredients:</b> basil, oregano, parsley, red pepper flakes, garlic powder, rosemary, thyme, salt</p>
+              <div class="card__foot"><span>56 g · <b>$6</b></span><a href="#shop" class="card__add">Buy</a></div>
+            </div>
+          </article>
+
+          <article class="card card--cta">
+            <div class="card__body">
+              <p class="eyebrow">Can't choose?</p>
+              <h3>Try a few.</h3>
+              <p>Every blend is $6. Pick up two or three and find your favourite.</p>
+              <a href="#shop" class="btn btn--light">Shop all blends</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- STORY -->
-    <section class="section story" id="story">
+    <section class="section section--dark story" id="story">
       <div class="wrap story__inner">
-        <div class="story__art" aria-hidden="true">
-          <div class="story__frame">
-            <div class="story__bowl"></div>
-            <div class="story__bowl story__bowl--2"></div>
-            <div class="story__bowl story__bowl--3"></div>
-          </div>
+        <div class="story__art">
+          <div class="story__frame"><img src="images/logo.jpg" alt="" width="640" height="551" loading="lazy"></div>
         </div>
         <div class="story__copy">
           <p class="eyebrow">Our story</p>
-          <h2>It started with a grandmother's tin.</h2>
-          <p>Mia grew up in a kitchen where nothing came from a supermarket packet. Spices were bought whole, toasted in a dry pan and ground just before cooking, and the whole house smelled of it.</p>
-          <p>Mia's Spices is an attempt to bottle that. We buy whole spices in small quantities, grind them in small batches, and mix every blend by hand. If a batch doesn't smell right, it doesn't get packed.</p>
+          <h2>The flavours I grew up with.</h2>
+          <p>Mia's Spices is handmade Mediterranean spice blends, crafted with love and inspired by the flavours I grew up with.</p>
+          <p>Everything is small-batch and handcrafted, with spices sourced from around the world, and every blend is made for delicious, flavourful home cooking. Because good food starts with great spices.</p>
           <p class="signature">— Mia</p>
         </div>
       </div>
@@ -249,40 +188,51 @@
       <div class="wrap">
         <div class="section__head">
           <p class="eyebrow">In the kitchen</p>
-          <h2>Three easy ways to start</h2>
+          <h2>Easy ways to use them</h2>
         </div>
         <div class="recipes">
           <article class="recipe">
             <span class="recipe__time">5 min</span>
-            <h3>Za'atar flatbread</h3>
-            <p>Mix 2 tbsp za'atar with 4 tbsp olive oil. Spread over pita or flatbread and bake at 220&nbsp;°C for 6 minutes.</p>
+            <h3>Dukkah avocado toast</h3>
+            <p>Mash avocado on toasted sourdough, add a squeeze of lemon and a generous sprinkle of Dukkah.</p>
           </article>
           <article class="recipe">
-            <span class="recipe__time">10 min</span>
-            <h3>Sumac onions</h3>
-            <p>Thinly slice a red onion, toss with 1 tsp sumac, a pinch of salt and lemon juice. Pile onto anything grilled.</p>
+            <span class="recipe__time">30 min</span>
+            <h3>Sheet-pan shawarma chicken</h3>
+            <p>Toss chicken thighs and sliced onion with olive oil and 2 tbsp Shawarma blend. Roast at 220&nbsp;°C until crisp. Serve in pita.</p>
           </article>
           <article class="recipe">
-            <span class="recipe__time">25 min</span>
-            <h3>Baharat chickpeas</h3>
-            <p>Toss drained chickpeas with oil, 1 tbsp baharat and salt. Roast at 200&nbsp;°C until crisp. Snack or salad topper.</p>
+            <span class="recipe__time">40 min</span>
+            <h3>Red Gold potatoes</h3>
+            <p>Cut potatoes into wedges, toss with oil and 1 tbsp Red Gold Blend, and roast at 200&nbsp;°C until golden.</p>
+          </article>
+          <article class="recipe">
+            <span class="recipe__time">On the grill</span>
+            <h3>Mediterranean BBQ wings</h3>
+            <p>Rub wings with oil and Mediterranean BBQ blend, rest 30 minutes, then grill or air-fry until sticky and charred.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
+    <!-- SHOP -->
+    <section class="section contact" id="shop">
       <div class="wrap contact__inner">
         <div>
-          <p class="eyebrow">Order &amp; contact</p>
-          <h2>Want a jar (or ten)?</h2>
-          <p>Online ordering is opening soon. Restaurants, cafés and shops: wholesale will be available too.</p>
+          <p class="eyebrow">Where to buy</p>
+          <h2>Find us on Whatnot</h2>
+          <p>All five blends are available in Mia's Whatnot shop, where you can buy now or catch a live show.</p>
+          <ul class="stats">
+            <li><b>5.0★</b><span>seller rating</span></li>
+            <li><b>120+</b><span>orders sold</span></li>
+            <li><b>$6</b><span>per blend</span></li>
+          </ul>
         </div>
         <div class="soon">
-          <span class="soon__badge">Coming soon</span>
-          <h3>The first batch is on its way.</h3>
-          <p>We're grinding, blending and labelling the first jars right now. Check back shortly to place your order.</p>
+          <span class="soon__badge">Shop now</span>
+          <h3>mias_spices on Whatnot</h3>
+          <p>Browse every blend, buy instantly, or follow the shop to hear about the next live show.</p>
+          <a class="btn btn--light" href="https://www.whatnot.com/user/mias_spices" target="_blank" rel="noopener">Visit the shop</a>
         </div>
       </div>
     </section>
@@ -290,8 +240,8 @@
 
   <footer class="footer">
     <div class="wrap footer__inner">
-      <a href="#top" class="logo logo--light"><span class="logo__mark" aria-hidden="true"></span><span class="logo__text">Mia's <em>Spices</em></span></a>
-      <p>Small-batch spices &amp; hand-mixed blends.</p>
+      <a href="#top" class="logo logo--light"><img class="logo__img" src="images/logo.jpg" alt="" width="40" height="40"><span class="logo__text">Mia's <em>Spices</em></span></a>
+      <p>Handmade Mediterranean spice blends.</p>
       <p class="footer__small">© <span id="year">2026</span> Mia's Spices</p>
     </div>
   </footer>
