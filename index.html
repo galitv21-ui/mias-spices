@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mia's Spices — Small-batch spices &amp; blends</title>
+  <meta name="description" content="Mia's Spices: freshly ground, small-batch spices and hand-mixed blends. Za'atar, sumac, baharat, hawaij and more.">
+  <meta property="og:title" content="Mia's Spices">
+  <meta property="og:description" content="Freshly ground, small-batch spices and hand-mixed blends.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mias-spices.online/">
+  <meta name="theme-color" content="#F5EDE1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Grain texture used across the site -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+  </svg>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a href="#top" class="logo" aria-label="Mia's Spices home">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">Mia's <em>Spices</em></span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav id="menu" class="nav__menu">
+        <a href="#spices">Spices</a>
+        <a href="#blends">Blends</a>
+        <a href="#story">Our story</a>
+        <a href="#kitchen">In the kitchen</a>
+        <a href="#contact" class="btn btn--small">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Small batch · Ground to order</p>
+          <h1>Spices that taste like <em>somewhere.</em></h1>
+          <p class="lede">Whole spices sourced from growers we know, toasted and ground in small batches, and blended by hand in Mia's kitchen. Fresh enough to smell the moment you open the jar.</p>
+          <div class="hero__cta">
+            <a href="#spices" class="btn">Explore the spices</a>
+            <a href="#story" class="link-arrow">Meet Mia</a>
+          </div>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <div class="pile pile--saffron"></div>
+          <div class="pile pile--paprika"></div>
+          <div class="pile pile--zaatar"></div>
+          <div class="pile pile--sumac"></div>
+          <div class="pile pile--turmeric"></div>
+          <span class="hero__stamp">Hand<br>blended<br><b>since day one</b></span>
+        </div>
+      </div>
+      <div class="marquee" aria-label="Spices we carry">
+        <ul class="marquee__track">
+          <li>Za'atar</li><li>Sumac</li><li>Smoked paprika</li><li>Baharat</li><li>Hawaij</li><li>Turmeric</li><li>Cumin</li><li>Ras el hanout</li><li>Cardamom</li><li>Aleppo pepper</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROMISES -->
+    <section class="promises wrap" aria-label="What makes us different">
+      <div class="promise">
+        <span class="promise__num">01</span>
+        <h3>Fresh, not dusty</h3>
+        <p>We grind in small runs every week. No jars sitting in a warehouse for a year.</p>
+      </div>
+      <div class="promise">
+        <span class="promise__num">02</span>
+        <h3>Nothing added</h3>
+        <p>No fillers, no anti-caking agents, no extra salt. Just the spice.</p>
+      </div>
+      <div class="promise">
+        <span class="promise__num">03</span>
+        <h3>Blended by hand</h3>
+        <p>Every blend is mixed, tasted and adjusted by Mia before it's packed.</p>
+      </div>
+    </section>
+
+    <!-- SPICES -->
+    <section class="section" id="spices">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">The pantry</p>
+          <h2>Single spices</h2>
+          <p>The building blocks. Each one picked for colour, aroma and oil content, then ground fresh.</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Filter spices by flavour">
+          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="chip" data-filter="warm" role="tab" aria-selected="false">Warm</button>
+          <button class="chip" data-filter="bright" role="tab" aria-selected="false">Bright</button>
+          <button class="chip" data-filter="smoky" role="tab" aria-selected="false">Smoky &amp; hot</button>
+        </div>
+
+        <div class="grid" id="spice-grid">
+          <article class="card" data-tags="bright">
+            <div class="card__swatch" style="--c1:#8E2C3B;--c2:#5E1A27"></div>
+            <div class="card__body">
+              <h3>Sumac</h3>
+              <p class="card__notes">Tart · lemony · fruity</p>
+              <p>Crushed dried berries with a sour, citrus snap. Scatter over salads, eggs, grilled fish and roast onions.</p>
+              <div class="card__foot"><span>60 g jar</span><a href="#contact" class="card__add">Order</a></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="smoky">
+            <div class="card__swatch" style="--c1:#C0432A;--c2:#7D2516"></div>
+            <div class="card__body">
+              <h3>Smoked paprika</h3>
+              <p class="card__notes">Smoky · sweet · deep</p>
+              <p>Peppers dried slowly over wood smoke. Gives stews, beans and roast potatoes a campfire depth.</p>
+              <div class="card__foot"><span>70 g jar</span><a href="#contact" class="card__add">Order</a></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="warm">
+            <div class="card__swatch" style="--c1:#E2A12A;--c2:#B86E12"></div>
+            <div class="card__body">
+              <h3>Turmeric</h3>
+              <p class="card__notes">Earthy · gingery · golden</p>
+              <p>High-curcumin root with real colour. For rice, soups, lentils and a golden milk before bed.</p>
+              <div class="card__foot"><span>80 g jar</span><a href="#contact" class="card__add">Order</a></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="warm">
+            <div class="card__swatch" style="--c1:#9A6A3A;--c2:#5E3B1C"></div>
+            <div class="card__body">
+              <h3>Cumin</h3>
+              <p class="card__notes">Nutty · savoury · warm</p>
+              <p>Toasted before grinding to wake up the oils. The backbone of hummus, shakshuka and chili.</p>
+              <div class="card__foot"><span>60 g jar</span><a href="#contact" class="card__add">Order</a></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="warm bright">
+            <div class="card__swatch" style="--c1:#8DA05A;--c2:#5A6B32"></div>
+            <div class="card__body">
+              <h3>Green cardamom</h3>
+              <p class="card__notes">Floral · minty · sweet</p>
+              <p>Freshly cracked pods. Lovely in coffee, rice puddings, cakes and slow-cooked meat.</p>
+              <div class="card__foot"><span>40 g jar</span><a href="#contact" class="card__add">Order</a></div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="smoky">
+            <div class="card__swatch" style="--c1:#A3301F;--c2:#5B1A10"></div>
+            <div class="card__body">
+              <h3>Aleppo-style pepper</h3>
+              <p class="card__notes">Fruity · oily · gentle heat</p>
+              <p>Coarse, glossy flakes with a slow warmth. Finish hummus, pizza, eggs and buttered pasta.</p>
+              <div class="card__foot"><span>60 g jar</span><a href="#contact" class="card__add">Order</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLENDS -->
+    <section class="section section--dark" id="blends">
+      <div class="wrap">
+        <div class="section__head section__head--light">
+          <p class="eyebrow">Mia's blends</p>
+          <h2>Mixed by hand, tasted by Mia</h2>
+          <p>Our house recipes. Each one is balanced so you can use a single spoon and get a complete flavour.</p>
+        </div>
+
+        <div class="blends">
+          <article class="blend">
+            <div class="blend__jar" style="--c1:#7C8A3E;--c2:#C9A85A"><span>Z</span></div>
+            <div>
+              <h3>Za'atar</h3>
+              <p class="blend__mix">Wild thyme · toasted sesame · sumac · sea salt</p>
+              <p>Herby, nutty and bright. Mix with olive oil for warm bread, or sprinkle over labneh and roast vegetables.</p>
+            </div>
+          </article>
+          <article class="blend">
+            <div class="blend__jar" style="--c1:#7A3B22;--c2:#C77B3B"><span>B</span></div>
+            <div>
+              <h3>Baharat</h3>
+              <p class="blend__mix">Allspice · black pepper · cinnamon · clove · nutmeg</p>
+              <p>A warm, rounded all-rounder for meatballs, rice dishes, roast chicken and tomato sauces.</p>
+            </div>
+          </article>
+          <article class="blend">
+            <div class="blend__jar" style="--c1:#B5852E;--c2:#E3C27A"><span>H</span></div>
+            <div>
+              <h3>Hawaij for coffee</h3>
+              <p class="blend__mix">Cardamom · ginger · cinnamon · clove</p>
+              <p>Half a teaspoon in the pot turns everyday coffee into something special. Also wonderful in cakes.</p>
+            </div>
+          </article>
+          <article class="blend">
+            <div class="blend__jar" style="--c1:#A8452A;--c2:#E2A12A"><span>R</span></div>
+            <div>
+              <h3>Ras el hanout</h3>
+              <p class="blend__mix">Up to 14 spices · rose petals · warm &amp; floral</p>
+              <p>Our most complex blend. Made for tagines, roast squash, couscous and lamb.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="gift">
+          <div>
+            <h3>The tasting box</h3>
+            <p>Four blends and two single spices in a gift box, with Mia's recipe cards. Made for first-timers and for gifts.</p>
+          </div>
+          <a href="#contact" class="btn btn--light">Ask about the box</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="section story" id="story">
+      <div class="wrap story__inner">
+        <div class="story__art" aria-hidden="true">
+          <div class="story__frame">
+            <div class="story__bowl"></div>
+            <div class="story__bowl story__bowl--2"></div>
+            <div class="story__bowl story__bowl--3"></div>
+          </div>
+        </div>
+        <div class="story__copy">
+          <p class="eyebrow">Our story</p>
+          <h2>It started with a grandmother's tin.</h2>
+          <p>Mia grew up in a kitchen where nothing came from a supermarket packet. Spices were bought whole, toasted in a dry pan and ground just before cooking, and the whole house smelled of it.</p>
+          <p>Mia's Spices is an attempt to bottle that. We buy whole spices in small quantities, grind them in small batches, and mix every blend by hand. If a batch doesn't smell right, it doesn't get packed.</p>
+          <p class="signature">— Mia</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KITCHEN -->
+    <section class="section section--tint" id="kitchen">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">In the kitchen</p>
+          <h2>Three easy ways to start</h2>
+        </div>
+        <div class="recipes">
+          <article class="recipe">
+            <span class="recipe__time">5 min</span>
+            <h3>Za'atar flatbread</h3>
+            <p>Mix 2 tbsp za'atar with 4 tbsp olive oil. Spread over pita or flatbread and bake at 220&nbsp;°C for 6 minutes.</p>
+          </article>
+          <article class="recipe">
+            <span class="recipe__time">10 min</span>
+            <h3>Sumac onions</h3>
+            <p>Thinly slice a red onion, toss with 1 tsp sumac, a pinch of salt and lemon juice. Pile onto anything grilled.</p>
+          </article>
+          <article class="recipe">
+            <span class="recipe__time">25 min</span>
+            <h3>Baharat chickpeas</h3>
+            <p>Toss drained chickpeas with oil, 1 tbsp baharat and salt. Roast at 200&nbsp;°C until crisp. Snack or salad topper.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact__inner">
+        <div>
+          <p class="eyebrow">Order &amp; contact</p>
+          <h2>Want a jar (or ten)?</h2>
+          <p>Send us a message with what you'd like and where you are, and we'll get back to you with prices and delivery. Restaurants, cafés and shops: ask about wholesale.</p>
+          <ul class="contact__list">
+            <li><span>Email</span><a href="mailto:hello@mias-spices.online">hello@mias-spices.online</a></li>
+            <li><span>Instagram</span><a href="#" rel="noopener">@miasspices</a></li>
+          </ul>
+        </div>
+        <form class="form" action="mailto:hello@mias-spices.online" method="post" enctype="text/plain">
+          <label>Your name<input name="name" required autocomplete="name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          <label>What would you like?<textarea name="message" rows="4" placeholder="2 × za'atar, 1 × hawaij…"></textarea></label>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a href="#top" class="logo logo--light"><span class="logo__mark" aria-hidden="true"></span><span class="logo__text">Mia's <em>Spices</em></span></a>
+      <p>Small-batch spices &amp; hand-mixed blends.</p>
+      <p class="footer__small">© <span id="year">2026</span> Mia's Spices</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
